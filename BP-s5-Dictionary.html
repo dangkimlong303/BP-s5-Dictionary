@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dictionary</title>
+</head>
+<body>
+    <script>
+        var word = prompt('Enter a word');
+        var english = ['dog','cat','snake','fish','tiger','lion'];
+        var vn = ['cho','meo','ran','ca','ho','su tu'];
+        var index = -1;
+        for (var i = 0;i<english.length;i++){
+            if (english[i] == word){
+                index = english.indexOf(word);
+            }
+        }
+        if (index == -1){
+            alert('not found');
+        } else{
+            alert(vn[index]);
+        }
+    </script>
+</body>
+</html>
